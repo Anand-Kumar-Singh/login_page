@@ -1,16 +1,13 @@
 {
-  "homepage": "https://anand-kumar-singh.github.io/login_page/",
+  "homepage": "https://anand-kumar-singh.github.io/login_page",
   "name": "crm-application",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild-dev": "shx rm -rf dist/*",
-    "build-dev": "parcel build index.html --no-optimize --public-url ./",
-    "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build index.html --public-url ./",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -26,8 +23,7 @@
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.0",
-    "shx": "^0.3.4"
+    "react-router-dom": "^6.14.0"
   },
   "browserslist": [
     "last 10 versions"
