@@ -1,10 +1,10 @@
 {
+  "homepage": "https://anand-kumar-singh.github.io/login_page/",
   "name": "crm-application",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://anand-kumar-singh.github.io/login_page/",
+  
   "scripts": {
-    
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run deploy", 
     "deploy": "gh-pages -d build"
