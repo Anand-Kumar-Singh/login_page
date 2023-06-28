@@ -2950,45 +2950,36 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 var _login = require("./components/Login");
 var _loginDefault = parcelHelpers.interopDefault(_login);
 var _reactRouterDom = require("react-router-dom");
-const App = ()=>{
+const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    exact: true,
-                    path: "/",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                        fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: "Loading..."
-                        }, void 0, false, void 0, void 0),
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, void 0, void 0)
-                    }, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 11,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 10,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 9,
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
-_c = App;
+_c = AppLayout;
+const router = (0, _reactRouterDom.createHashRouter)([
+    {
+        path: "/",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 19,
+            columnNumber: 14
+        }, undefined)
+    }
+]);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+    router: router
+}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 28,
+    lineNumber: 25,
     columnNumber: 13
 }, undefined));
 var _c;
-$RefreshReg$(_c, "App");
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
