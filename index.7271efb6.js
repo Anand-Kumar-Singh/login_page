@@ -2952,20 +2952,26 @@ var _loginDefault = parcelHelpers.interopDefault(_login);
 var _reactRouterDom = require("react-router-dom");
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 15,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 11,
+            lineNumber: 14,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
 _c = AppLayout;
-const router = (0, _reactRouterDom.createHashRouter)([
+const router = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 19,
+            lineNumber: 24,
             columnNumber: 14
         }, undefined)
     }
@@ -2975,7 +2981,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: router
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 25,
+    lineNumber: 30,
     columnNumber: 13
 }, undefined));
 var _c;
