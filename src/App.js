@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-      <Router>
+    <div>Hello</div>
+      {/* <Router>
         <Routes>
           <Route
             exact
@@ -18,7 +19,7 @@ const App = () => {
             }
           />
         </Routes>
-      </Router>
+      </Router> */}
     </>
   );
 };
